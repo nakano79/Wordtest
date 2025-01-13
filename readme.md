@@ -1,6 +1,6 @@
 ### 간단한 단어 암기장
 [demo](https://word.dennykun.moe)  
-fisher-yates 셔플 알고리즘을 활용한 한영 단어 암기장
+fisher-yates 셔플 알고리즘을 활용한 단어 암기장
 
 > 사용법
 > - 엑셀 등을 이용하여 CSV 파일 작성
