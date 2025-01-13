@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#wordContainer {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.word-pair {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.word-pair label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.word-pair input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    transition: border-color 0.3s;
+}
+
+.word-pair input:focus {
+    border-color: #5cb85c;
+    outline: none;
+}
+
+#result {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.wrong {
+    border-color: red;
+    background-color: #f8d7da;
+}
+
+.btn-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #5bc0de;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #31b0d5;
+}
+
+.mode-options {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.mode-options label {
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .word-pair input {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .mode-options {
+        align-items: center;
+    }
+}
