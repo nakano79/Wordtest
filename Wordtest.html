@@ -30,8 +30,12 @@
             color: #333;
         }
 
+        h3 {
+            margin-bottom: 10px;
+        }
+
         input[type="file"] {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             padding: 10px;
             background-color: #fff;
             border: 1px solid #ccc;
@@ -119,6 +123,7 @@
 
         .mode-options {
             margin-top: 20px;
+            margin-bottom: 15px;
             padding: 15px;
             border: 2px solid #ccc;
             border-radius: 8px;
@@ -159,6 +164,7 @@
 </head>
 <body>
     <h1>단어 암기장</h1>
+    <h3><a href="https://github.com/nakano79/Wordtest">사용법</a></h3>
     <input type="file" id="csvFile" accept=".csv">
     <div class="mode-options">
         <label><input type="radio" name="matchMode" value="partial" checked>하나의 뜻만 맞아도 정답 처리</label>
